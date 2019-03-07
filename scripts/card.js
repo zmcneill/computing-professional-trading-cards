@@ -50,17 +50,17 @@ function myCard() {
                 bio = "Dr. Wilson runs Computing Professionals.";
                 break;
             case 2:
-                image.src = "../images/6.jpg";
+                image.src = "../images/2.jpg";
                 name = "The Lecture Hall"
                 bio = "The Lecture Hall is where Dr. Wilson teaches.";
                 break;
             case 3:
-                image.src = "../images/7.jpg";
+                image.src = "../images/3.jpg";
                 name = "The Cone Lab"
                 bio = "The Cone Lab is where TA's help with activities."
                 break;
             case 4:
-                image.src = "../images/9.jpg";
+                image.src = "../images/4.jpg";
                 name = "Woodward Hall"
                 bio = "Woodward Hall is where awesome students like you show up to learn about computing!"
                 break;

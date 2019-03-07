@@ -7,7 +7,7 @@ function myCard() {
    
     if (card.style.display === "none") {
         //Generates random number (0-9) to pick chacter each time it is called
-        var character = (~~(Math.random() * 10));
+        var character = (~~(Math.random() * 5));
 
         //Generates random number to pick color each time is called
         var rareTest = Math.random();
@@ -19,14 +19,14 @@ function myCard() {
         var colorGreen = "";
 
         if (rareTest >= 0.0 && rareTest < 0.6) {
-            colorRed = 255;
-            colorGreen = 0;
-            colorBlue = 0;
+            colorRed = 54;
+            colorGreen = 158;
+            colorBlue = 148;
             rare = "Common"
         } else if (rareTest >= 0.6 && rareTest < 0.9) {
-            colorRed = 192;
-            colorGreen = 192;
-            colorBlue = 192;
+            colorRed = 186;
+            colorGreen = 10;
+            colorBlue = 20;
             rare = "Rare"
         } else if (rareTest >= 0.9) {
             colorRed = 255;
@@ -41,53 +41,28 @@ function myCard() {
         switch (character) {
             case 0:
                 image.src = "../images/0.jpg";
-                name = "Hutch";
-                bio = "Hutch is a TA who runs Career Code. #HutchTouch";
+                name = "Josh";
+                bio = "Josh is the Lead TA for Computing Professionals.";
                 break;
             case 1:
                 image.src = "../images/1.jpg";
-                name = "Dr. Rich Nguyen";
-                bio = "Dr. Nguyen runs Computing Professionals.";
+                name = "Dr. Dale-Marie Wilson";
+                bio = "Dr. Wilson runs Computing Professionals.";
                 break;
             case 2:
-                image.src = "../images/2.jpg";
-                name = "Eric";
-                bio = "Eric is a TA for Computing Professionals.";
-                break;
-            case 3:
-                image.src = "../images/3.jpg";
-                name = "Asfi";
-                bio = "Asfi is a TA for Computing Professionals.";
-                break;
-            case 4:
-                image.src = "../images/4.jpg";
-                name = "Noah";
-                bio = "Noah is a TA for Computing Professionals.";
-                break;
-            case 5:
-                image.src = "../images/5.jpg";
-                name = "Viktoria";
-                bio = "Viktoria is a TA for Computing Professionals.";
-                break;
-            case 6:
                 image.src = "../images/6.jpg";
                 name = "The Lecture Hall"
-                bio = "The Lecture Hall is where Dr. Nguyen teaches.";
+                bio = "The Lecture Hall is where Dr. Wilson teaches.";
                 break;
-            case 7:
+            case 3:
                 image.src = "../images/7.jpg";
                 name = "The Cone Lab"
                 bio = "The Cone Lab is where TA's help with activities."
                 break;
-            case 8:
-                image.src = "../images/8.jpg";
-                name = "Career Code"
-                bio = "Career Code is where awesome students like you show up to learn about computing!"
-                break;
-            case 9:
+            case 4:
                 image.src = "../images/9.jpg";
-                name = "Career Code"
-                bio = "Career Code is where awesome students like you show up to learn about computing!"
+                name = "Woodward Hall"
+                bio = "Woodward Hall is where awesome students like you show up to learn about computing!"
                 break;
 
         }
